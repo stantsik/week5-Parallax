@@ -1,0 +1,205 @@
+/*Css- varaibles*/
+
+:root {
+    --dark-color:#3b493a;
+    --medium-color:#bb7f96;
+    --medium-transparent: #bb7f964a;
+    --light-color:#f2e4da;
+    --light-transparent: #f2e4da8a;
+
+}
+
+@font-face {
+    font-family: myPermanentMarker;
+    src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: var(--light-color);
+text-align: center;
+font-family: myPermanentMarker;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url("../images/pexels-daria-shevtsova-1070850.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.intro-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-image__link a {
+    background-color: var(--medium-transparent);
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.intro-image__link a:hover, 
+.quality-image__link a:hover,
+.origin-image__link a {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url(../images/pexels-avonne-stalling-3923555.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quality-image__link a {
+    background-color: var(--light-transparent);
+    border: 2px solid var(--light-color);
+    color: var(--dark-color);
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url(../images/pexels-rodolfo-quirós-1727415.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.origin-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.origin-image__link a {
+    background-color: var(--medium-transparent);
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.origin-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 250px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--medium-color);
+}
+
+.footer p {
+    margin-top: 2rem;
+}
